@@ -19,6 +19,37 @@ body {
   border-bottom: 1px solid black;
 }
 
+#backtotop {
+  background: white;
+  font-size: 1em;
+  color: black;
+  float: right;
+  padding-left: 4px;
+  padding-right: 4px;
+  border: solid black 1px;
+  margin: 5vh;
+}
+
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: grey;
+}
+
 header {
 	font-family: 'Oswald', sans-serif;
 	color: black;
@@ -38,8 +69,8 @@ header {
 .titolo h1 {
   font-weight: 100;
   font-size: 2em;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 .titolo {
@@ -56,7 +87,7 @@ h1 span {
 }
 
 .setsize {
-  height: 26vh;
+  height: 25vh;
   padding: 0;
 }
 
@@ -78,11 +109,22 @@ h1 span {
 	font-size: 0.8em;
 }
 
+.flip-card-front {
+  padding-bottom: 15px;
+}
+
 div {
 	text-align: center;
 }
 
+.flip-card-back span {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
+.borderright {
+  border-right: grey dashed 0.001px;
+}
 
 /** ----------------------------------------------- MEDIA QUERIES ----------------------------------------------------------**/
 
@@ -90,20 +132,24 @@ div {
 @media screen and (min-width: 992px){
 .breakhere { display: none; }
 h1 span {font-size: 1em;}
-.setsize {
-  height: 30vh;
-  padding: 0;
+
+
+.bordertop {
+  border-top: black solid 1px;
+}
+
+.borderright {
+  border-right: black solid 1px;
 }
 
 .row .toprow {
-  height: 30vh;
+  height: 25vh;
 }
             /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
   width: 100%;
   height: 100%;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
 /* This container is needed to position the front and back side */
@@ -128,6 +174,7 @@ h1 span {font-size: 1em;}
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  padding: 0;
 }
 
 /* Style the front side (fallback if image is missing) */
@@ -138,7 +185,7 @@ h1 span {font-size: 1em;}
 
 /* Style the back side */
 .flip-card-back {
-  background-color: white;
+  background:#deeaee;
   color: black;
   transform: rotateY(180deg);
 }
