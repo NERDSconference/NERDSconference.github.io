@@ -56,8 +56,12 @@ h1 span {
 }
 
 .setsize {
-	height: 30vh;
+  height: 26vh;
   padding: 0;
+}
+
+.row .toprow {
+  height: 16vh;
 }
 
 .talk {
@@ -84,7 +88,22 @@ div {
 }
 
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+/** ----------------------------------------------- MEDIA QUERIES ----------------------------------------------------------**/
+
+
+@media screen and (min-width: 992px){
+.breakhere { display: none; }
+h1 span {font-size: 1em;}
+.setsize {
+  height: 30vh;
+  padding: 0;
+}
+
+.row .toprow {
+  height: 30vh;
+}
+            /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
   width: 100%;
@@ -128,16 +147,5 @@ div {
   color: black;
   transform: rotateY(180deg);
 }
-
-/** ----------------------------------------------- MEDIA QUERIES ----------------------------------------------------------**/
-
-
-@media screen and (min-width: 1024px){
-            .breakhere { display: none; }
-            h1 span {font-size: 1em;}
-            .wrapper{ 
-            	grid-template-columns: repeat(4,1fr);
-
-             }
         }
 
