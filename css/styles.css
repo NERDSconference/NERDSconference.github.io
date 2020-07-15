@@ -123,7 +123,7 @@ div {
 }
 
 .borderright {
-  border-right: grey dashed 0.001px;
+  border-right: grey dashed 0.1px;
 }
 
 /** ----------------------------------------------- MEDIA QUERIES ----------------------------------------------------------**/
