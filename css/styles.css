@@ -47,7 +47,7 @@ header {
 }
 
 .TTable {
-	width: 80%;
+	width: 90%;
 	margin-top: 50px;
 }
 
@@ -56,8 +56,12 @@ h1 span {
 }
 
 .setsize {
-	height: 25vh;
-	line-height: 25vh;
+	height: 30vh;
+  padding: 0;
+}
+
+.talk {
+  font-size: 0.8em;
 }
 
 .speaker {
@@ -67,11 +71,18 @@ h1 span {
 
 .date {
 	text-align: center;
+	font-size: 0.8em;
+}
+
+
+span {
+  vertical-align: middle;
 }
 
 div {
 	text-align: center;
 }
+
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
