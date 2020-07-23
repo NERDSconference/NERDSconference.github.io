@@ -9,31 +9,26 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script> 
+    $(function(){
+      $("#header").load("header.html"); 
+    });
+    </script> 
   </head>
 
 <body>
   <a name="topofthepage"></a>
   <!-- HEADER -->
   <header id="header">
-    <div class="dropdown">
-        <nav id="header-nav" class="navbar navbar-default">
-          <div class="container-fluid justify-content-center">
-            <div class="navbar-header">
-             <div class="navbar-brand">
-               <h1>NERDS conference <br class="breakhere"><span>July 29th-31st</span></h1>
-             </div><!-- .navbar-brand -->
-           </div><!-- .navbar-header -->
-         </div><!-- .container-fluid -->
-        </nav>
-
-        <nav class="navbar navbar-default titolo">
-          <div class="container-fluid justify-content-center">
-               <h1>TIMETABLE</h1>
-         </div><!-- .container-fluid -->
-        </nav>
-    </div>
   </header>
 
+
+<nav class="navbar navbar-default titolo">
+   <div class="container-fluid justify-content-center">
+        <h1>TIMETABLE</h1>
+   </div><!-- .container-fluid -->  
+</nav>
 
   <!-- MAIN PAGE -->
 
@@ -48,7 +43,7 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front d-flex align-items-center justify-content-center"><span>Sujay</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><span>The Trinion with a Twist</span></div>
+              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#sujay"><span>The Trinion with a Twist</span></a></div>
             </div>
           </div>
         </div>
@@ -57,7 +52,7 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front d-flex align-items-center justify-content-center"><span>Diego</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><span>Spectral Sequences and Chiral Rings</span></div>
+              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#diego"><span>Spectral Sequences and Chiral Rings</span></a></div>
             </div>
           </div>
         </div>
@@ -68,7 +63,7 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front d-flex align-items-center justify-content-center"><span>Giulia</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><span>Worldsheet Formulae for Scattering Amplitudes in 6 and 4d</span></div>
+              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#giulia"><span>Worldsheet Formulae for Scattering Amplitudes in 6 and 4d</span></a></div>
             </div>
           </div>
         </div>
@@ -79,7 +74,7 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front d-flex align-items-center justify-content-center"><span>Joseph</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><span>Entropy of Arithmetic Black Holes (pt. I)</span></div>
+              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#joseph"><span>Entropy of Arithmetic Black Holes (pt. I)</span></a></div>
             </div>
           </div>
         </div>
@@ -88,7 +83,7 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front d-flex align-items-center justify-content-center"><span>Pyry</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><span>Entropy of Arithmetic Black Holes (pt. II)</span></div>
+              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#pyry"><span>Entropy of Arithmetic Black Holes (pt. II)</span></a></div>
             </div>
           </div>
         </div>
@@ -103,7 +98,7 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front d-flex align-items-center justify-content-center"><span>Julius</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><span>Trifectas for T<sub>N</sub> in 5d</span></div>
+              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#julius"><span>Trifectas for T<sub>N</sub> in 5d</span></a></div>
             </div>
           </div>
         </div>
@@ -112,7 +107,7 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front d-flex align-items-center justify-content-center"><span>Horia</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><span>5d Seiberg-Witten Geometry of Rank One Theories</span></div>
+              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#horia"><span>5d Seiberg-Witten Geometry of Rank One Theories</span></a></div>
             </div>
           </div>
         </div>
@@ -123,7 +118,7 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front d-flex align-items-center justify-content-center"><span>Marieke</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><span>(Symplectic) Leaves and (5d Higgs) Branches in the Tropical Rain Forest</span></div>
+              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#marieke"><span>(Symplectic) Leaves and (5d Higgs) Branches in the Tropical Rain Forest</span></a></div>
             </div>
           </div>
         </div>
@@ -134,7 +129,7 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front d-flex align-items-center justify-content-center"><span>Andrea</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><span>Supersymmetric Observables of N=1 Quantum Field Theories on a Twisted S<sup>1</sup> x S<sup>3</sup></span></div>
+              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#andrea"><span>Supersymmetric Observables of N=1 Quantum Field Theories on a Twisted S<sup>1</sup> x S<sup>3</sup></span></a></div>
             </div>
           </div>
         </div>
@@ -143,7 +138,7 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front d-flex align-items-center justify-content-center"><span>Carmen</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><span>Negativities, 3d Higher Spin Gravity and Modular Bootstrap</span></div>
+              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#carmen"><span>Negativities, 3d Higher Spin Gravity and Modular Bootstrap</span></a></div>
             </div>
           </div>
         </div>
@@ -158,7 +153,7 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front d-flex align-items-center justify-content-center"><span>Mateo</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><span>An Explicit Example of a Family of Heterotic G<sub>2</sub> Systems</span></div>
+              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#mateo"><span>An Explicit Example of a Family of Heterotic G<sub>2</sub> Systems</span></a></div>
             </div>
           </div>
         </div>
@@ -167,7 +162,7 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front d-flex align-items-center justify-content-center"><span>Dewi</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><span>Horizon Molecules in Causal Set Theory</span></div>
+              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#dewi"><span>Horizon Molecules in Causal Set Theory</span></a></div>
             </div>
           </div>
         </div>
@@ -178,7 +173,7 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front d-flex align-items-center justify-content-center"><span>Palash</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><span>Modular Bootstrap and Classification of Rational CFT</span></div>
+              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#palash"><span>Modular Bootstrap and Classification of Rational CFT</span></a></div>
             </div>
           </div>
         </div>
@@ -189,7 +184,7 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front d-flex align-items-center justify-content-center"><span>Atul</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><span>Celestialology</span></div>
+              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#atul"><span>Celestialology</span></a></div>
             </div>
           </div>
         </div>
