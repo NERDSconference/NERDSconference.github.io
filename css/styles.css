@@ -11,6 +11,18 @@ body {
   height: 100%;
 }
 
+.practicalinfo{
+  margin-top: 10vh;
+}
+
+.practicalinfo a{
+  text-decoration: underline;
+}
+
+.practicalinfo p{
+  font-size: 0.5em;
+}
+
 .dropbtn {
   width: 100%;
   height: 100%;
