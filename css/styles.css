@@ -7,7 +7,7 @@ body {
   line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));     
   color: black;
   background-color: white;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Amatic SC';
   height: 100%;
 }
 
@@ -96,7 +96,9 @@ body {
   padding-right: 4px;
   border: solid black 1px;
   margin: 5vh;
+
 }
+
 
 a:link {
   color: black;
@@ -121,6 +123,10 @@ a:active {
 header {
 	font-family: 'Oswald', sans-serif;
 	color: black;
+}
+
+.main-title{
+  font-family: 'Oswald', sans-serif;
 }
 
 
@@ -162,10 +168,11 @@ header {
   margin-top: 5vh;
   line-height: 4vh;
   text-align: left;
+  font-family: 'Oxygen Mono', sans-serif;
 }
 
 .abstrl {
-  font-family: 'Oxygen Mono', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 0.8em;
   text-align: left;
   width: 100%;
@@ -177,17 +184,18 @@ header {
   margin-top: 5vh;
   line-height: 4vh;
   text-align: right;
+  font-family: 'Oxygen Mono', sans-serif;
 }
 
 .abstrr {
-  font-family: 'Oxygen Mono', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 0.8em;
   text-align: right;
   width: 100%;
 }
 
 .titletalk {
-  font-weight: 200;
+    font-family: 'Amatic SC', cursive;
 }
 
 
@@ -241,6 +249,40 @@ div {
 
 .flip-card-back span {
   text-decoration: underline;
+}
+
+#wrapper{
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.superposition-content{
+    color: black;
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    position: relative;
+    z-index: 100;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.superposition-background{
+    color: #999999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+
+.superposition-content h1 {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20%;
+  width: 60%;
+  line-height: 15vh;
 }
 
 
@@ -305,7 +347,8 @@ h1 span {font-size: 1em;}
 .row .toprow {
   height: 25vh;
 }
-            /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
   width: 100%;
@@ -349,5 +392,57 @@ h1 span {font-size: 1em;}
   color: black;
   transform: rotateY(180deg);
 }
-        }
+
+}
+
+/** ------------------------- Devices w. screen smaller than 768px ---------------------------- **/
+@media (max-device-width: 767px) {
+.main-image {
+/* The image used */
+  background-image: url("../images/SolvayNERDS.png");
+  background-position: center; 
+
+  margin-top: 8vh;
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-size: contain;
+/*  vertical-align: baseline;
+*/}
+
+
+}
+
+
+
+/** ------------------------- Devices that cannot hover ---------------------------- **/
+/** @media (hover: none) { 
+}**/
+
+
+
+
+
+
+
+/** ------------------------- Devices w. screen larger than 767px ---------------------------- **/
+@media (min-device-width: 768px) {
+.conference-image {
+/* The image used */
+  background-image: url("../images/SolvayNERDS.png");
+
+  /* Full height */
+/*  width: 100%;*/
+  min-height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+}
 
