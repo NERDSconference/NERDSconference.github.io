@@ -11,6 +11,9 @@ body {
   height: 100%;
 }
 
+
+/*----------- LINK TO ONLINE STREAMING -----------*/
+
 .practicalinfo{
   margin-top: 10vh;
 }
@@ -23,6 +26,37 @@ body {
   font-size: 0.5em;
 }
 
+/*----------- NAVIGATION BAR? -----------*/
+header {
+  font-family: 'Oswald', sans-serif;
+  color: black;
+}
+
+#header-nav {
+  background-color: white;
+  border-radius: 0;
+  align-content: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+.navbar-brand {
+  margin: 0;
+}
+
+.navbar-brand h1 {
+  font-weight: 300;
+  font-size: calc(2.5*(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))));
+  margin:0;
+  text-align: center;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+
+/*
 .dropbtn {
   width: 100%;
   height: 100%;
@@ -62,29 +96,16 @@ body {
   float: none;
 }
 
-.navbar-brand a:hover, .navbar-brand a:focus {
-  text-decoration: none;
-}
-
 .navbar-toggler {
   border: none;
 }
 
-
-
-
 .navbar-light .navbar-nav .nav-link {
   color: black;
 }
+*/
 
-#header-nav {
-  background-color: white;
-  border-radius: 0;
-  align-content: center;
-  padding-bottom: 20px;
-  border-bottom: 1px solid black;
-}
-
+/*----------- BACK TO TOP BUTTON -----------*/
 
 
 #backtotop {
@@ -98,6 +119,8 @@ body {
   margin: 5vh;
 
 }
+
+/*----------- A TAG -----------*/
 
 
 a:link {
@@ -120,25 +143,10 @@ a:active {
   color: grey;
 }
 
-header {
-	font-family: 'Oswald', sans-serif;
-	color: black;
-}
+/*----------- MAIN BODY IN INDEX -----------*/
 
 .main-title{
   font-family: 'Oswald', sans-serif;
-}
-
-
-.navbar-brand {
-	margin: 0;
-}
-
-.navbar-brand h1 {
-  font-weight: 300;
-  font-size: calc(2.5*(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))));
-  margin:0;
-  text-align: center;
 }
 
 .titolo h1 {
@@ -157,9 +165,63 @@ header {
 	margin-top: 50px;
 }
 
+.setsize {
+  height: 25vh;
+  padding: 0;
+}
+
+.row .toprow {
+  height: 16vh;
+}
+
+.talk {
+  font-size: 0.8em;
+}
+
+.speaker {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.date {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.flip-card-front {
+  padding-bottom: 15px;
+}
+
+div {
+  text-align: center;
+}
+
+.flip-card-back a {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.borderright {
+  border-right: grey dashed 0.1px;
+}
+
+.linktoabstract{
+
+}
+
+.flip-card-back span {
+  text-decoration: underline;
+}
+
+/*----------- MAIN BODY IN ABSTRACTS -----------*/
+
 .boxabstracts {
   width: 70%;
   text-align: left;
+}
+
+h1 span {
+  font-size: 0.7em;
 }
 
 .speakertitlel {
@@ -199,57 +261,7 @@ header {
 }
 
 
-h1 span {
-	font-size: 0.7em;
-}
-
-.setsize {
-  height: 25vh;
-  padding: 0;
-}
-
-.row .toprow {
-  height: 16vh;
-}
-
-.talk {
-  font-size: 0.8em;
-}
-
-.speaker {
-	text-align: center;
-	font-size: 1.2em;
-}
-
-.date {
-	text-align: center;
-	font-size: 0.8em;
-}
-
-.flip-card-front {
-  padding-bottom: 15px;
-}
-
-div {
-	text-align: center;
-}
-
-.flip-card-back a {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.borderright {
-  border-right: grey dashed 0.1px;
-}
-
-.linktoabstract{
-
-}
-
-.flip-card-back span {
-  text-decoration: underline;
-}
+/*----------- TEMPORARY PAGE BEFORE ANNOUNCED TIMETABLE: SUPERPOSITION OF FADING TABLE AND TEXT -----------*/
 
 #wrapper{
     position: relative;
@@ -290,12 +302,11 @@ div {
 
 
 @media screen and (min-width: 992px){
-.breakhere { display: none; }
-h1 span {font-size: 1em;}
 
-.flip-card-back span {
-  text-decoration: none;
-}
+.breakhere { display: none; }
+
+
+/** ----------------------------- ABSTRACTS -----------------------------------------**/
 
 .speakertitler {
   line-height: 8vh;
@@ -305,36 +316,15 @@ h1 span {font-size: 1em;}
   line-height: 8vh;
 }
 
-.dropbtn {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  display: inline-block;
-  padding: 0;
-  border: 0;
-  margin: 0;
+
+
+/** ----------------------------- STYLING TIMETABLE -----------------------------------------**/
+
+h1 span {font-size: 1em;}
+
+.flip-card-back span {
+  text-decoration: none;
 }
-
-.dropdown-content {
-  display: none;
-  background: white;
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-  border-bottom: 1px solid black;
-}
-
-.menu-list {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 300;
-  color: black;
-  font-size: 1em;
-  text-transform: uppercase;
-  width: 100%;
-}
-
-.dropdown:hover .dropdown-content {display: block;}
-
 
 .bordertop {
   border-top: black solid 1px;
@@ -393,24 +383,60 @@ h1 span {font-size: 1em;}
   transform: rotateY(180deg);
 }
 
+/*
+.dropbtn {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  border: 0;
+  margin: 0;
 }
+
+.dropdown-content {
+  display: none;
+  background: white;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  border-bottom: 1px solid black;
+}
+
+.menu-list {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  color: black;
+  font-size: 1em;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+*/
+
+
+}
+
+/*----------- CONFERENCE PICTURE -----------*/
+
 
 /** ------------------------- Devices w. screen smaller than 768px ---------------------------- **/
 @media (max-device-width: 767px) {
-.main-image {
+.conference-image {
 /* The image used */
   background-image: url("../images/SolvayNERDS.png");
   background-position: center; 
 
-  margin-top: 8vh;
+  margin-top: 0;
 
   /* Full height */
   height: 100%;
+  width: 100%;
 
   /* Center and scale the image nicely */
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-size: contain;
 /*  vertical-align: baseline;
 */}
 
