@@ -14,15 +14,15 @@ body {
 
 /*----------- LINK TO ONLINE STREAMING -----------*/
 
-.practicalinfo{
+.practicalinfo {
   margin-top: 10vh;
 }
 
-.practicalinfo a{
+.practicalinfo a {
   text-decoration: underline;
 }
 
-.practicalinfo p{
+.practicalinfo p {
   font-size: 0.5em;
 }
 
@@ -144,6 +144,14 @@ a:active {
 }
 
 /*----------- MAIN BODY IN INDEX -----------*/
+
+.time {
+  align-self: left;
+}
+
+.name {
+  align-self: right;
+}
 
 .main-title{
   font-family: 'Oswald', sans-serif;
