@@ -145,12 +145,24 @@ a:active {
 
 /*----------- MAIN BODY IN INDEX -----------*/
 
+.day {
+  padding-left: 20vh;
+  padding-right: 20vh;
+}
+
 .time {
-  align-self: left;
+  width: 100%;
+  font-size: 0.8em;
+  text-align: center;
+  padding-right: 1vh;
+  padding-left: 18vh;
 }
 
 .name {
-  align-self: right;
+  text-align: center;
+  width: 100%;
+  padding-right: 18vh;
+  padding-left: 1vh;
 }
 
 .main-title{
@@ -175,6 +187,11 @@ a:active {
 
 .setsize {
   height: 25vh;
+  padding: 0;
+}
+
+.setsize-double {
+  height: 50vh;
   padding: 0;
 }
 
