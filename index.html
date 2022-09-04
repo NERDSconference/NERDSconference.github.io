@@ -1,584 +1,75 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NERDS conference</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
-    <script src="js/jquery-3.5.1.js"></script>
-    <script> 
-    $(function(){
-      $("#header").load("header.html"); 
-    });
-    </script> 
-  </head>
+    
+<title>NERDS Conference</title>
+
+    <link rel="stylesheet" href="static/bootstrap.min.css">
+    <link rel="stylesheet" href="static/styles.css">
+</head>
 
 <body>
+    <a name="topofthepage"></a>
+	
+    <!-- HEADER -->
+    <header id="header">
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container-fluid justify-content-center">
+                <div class="navbar-header">
+                    <div class="navbar-brand">
+                        <a href="index.html">
+                            <h1>NERDS conference 2022</h1>
+                        </a>
+                    </div><!-- .navbar-brand -->
+                </div><!-- .navbar-header -->
+            </div><!-- .container-fluid -->
+        </nav>
+    </header>
+    
 
- <!----------- HEADER - SEE HEADER.HTML FILE ----------->
-  <a name="topofthepage"></a>
-  <!-- HEADER -->
-  <header id="header">
-  </header>
-
- <!----------- LINK TO ONLINE STREAMING ----------->
-
-<!-- <div class="container-fluid practicalinfo">
-	<a href="https://meet.jit.si/NewEasygoingResearchDPhilSummerConference2020">Join the conference!</a>
-	<p>PASSWORD: NERDS2020</p>
+<div class="justify-content-center container-fluid">
+    <div class="row" style="border-bottom: 1px solid black;">
+        <div class="col-md-3 infocol">
+            3rd edition <br>
+            20th - 22nd October <br><br>
+			
+            Andrew Wiles Building <br>
+            L6<br><br>
+			
+			Organizers: <br>
+            <div class="organisers">
+				
+				Andrea Boido<br>
+				
+				Giuseppe Bogna<br>
+				
+				Lea Bottini<br>
+				
+				Palash Singh<br>
+				
+			</div>
+			
+			
+            <a id="submit_talk" class="btn" href="https://forms.gle/UmVTX4MJTWDdqBtA7">Submit talk</a>
+            
+		</div>
+		
+        <div class="col-md-9 conference-image">
+			<img src="./static/images/2020.png" alt="2020">
+		</div>
+		
+	</div>
 </div>
--->
-
-<!--------------------------------- BODY PRE-TIMETABLE ----------------------------------->
-<!---
-<nav class="navbar navbar-default titolo">
-   <div class="container-fluid justify-content-center">
-        <h1>After last year's success...</h1>
-   </div>
-</nav>
-  <div class="conference-image">
-  </div>
-<nav class="navbar navbar-default titolo">
-  <div class="container-fluid justify-content-center">
-   <h1>NERDS is back, with one extra dimension!</h1>
-   <h1>Join us for the first in-person edition, October 20th-22nd in L6.</h1>
-  </div>
-</nav>
-
-<div id="wrapper">
-  <div class="superposition-content">
-    <h1>Can't wait to see your name on the timetable? Drop us an email with a catchy title and an intriguing abstract!</h1>
-  </div>
-  <div class="TTable container-fluid justify-content-center superposition-background">
-    <div class="row container-fluid">
-      <div class="col-12 col-lg-6">
-        <div class="row">
-        <div class="col-6 setsize toprow borderright"></div>
-        <div class="col-6 setsize date toprow d-flex align-items-center justify-content-center"><span>WED 20.10</span></div>
-        <div class="col-6 setsize date borderright bordertop d-flex align-items-center justify-content-center"><span>10:00-10:45</span></div>
-        <div class="col-6 setsize speaker bordertop d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-center"></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 setsize date borderright d-flex align-items-center justify-content-center"><span>10:45-11:30</span></div>
-        <div class="col-6 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-center"></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 setsize date toprow borderright d-flex align-items-center justify-content-center"><span>11:30-11:45</span></div>
-        <div class="col-6 setsize date toprow d-flex align-items-center justify-content-center"><span class="d-lg-none">COFFEE BREAK</span></div>
-        <div class="col-6 setsize date borderright d-flex align-items-center justify-content-center"><span>11:45-12:30</span></div>
-        <div class="col-6 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-center"></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 setsize date toprow borderright d-flex align-items-center justify-content-center"><span>12:30-13:30</span></div>
-        <div class="col-6 setsize date toprow d-flex align-items-center justify-content-center"><span class="d-lg-none">LUNCH BREAK</span></div>
-        <div class="col-6 setsize date borderright d-flex align-items-center justify-content-center"><span>13:30-14:15</span></div>
-        <div class="col-6 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-center"></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 setsize date borderright d-flex align-items-center justify-content-center"><span>14:15-15:00</span></div>
-        <div class="col-6 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-center"></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"></div>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-3">
-        <div class="row">
-        <div class="col-6 d-lg-none setsize toprow borderright"></div>
-        <div class="col-6 col-lg-12 setsize date toprow d-flex align-items-center justify-content-center"><span>THU 21.10</span></div>
-        <div class="col-6 d-lg-none setsize date bordertop borderright d-flex align-items-center justify-content-center"><span>10:00-10:45</span></div>
-        <div class="col-6 col-lg-12 setsize speaker bordertop d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-center"></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 d-lg-none setsize date borderright d-flex align-items-center justify-content-center"><span>10:45-11:30</span></div>
-        <div class="col-6 col-lg-12 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-center"></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 d-lg-none setsize date toprow borderright d-flex align-items-center justify-content-center"><span>11:30-11:45</span></div>
-        <div class="col-6 col-lg-12 setsize date toprow d-flex align-items-center justify-content-center"><span>COFFEE BREAK</span></div>
-        <div class="col-6 d-lg-none setsize date borderright d-flex align-items-center justify-content-center"><span>11:45-12:30</span></div>
-        <div class="col-6 col-lg-12 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-center"></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 d-lg-none setsize date toprow borderright d-flex align-items-center justify-content-center"><span>12:30-13:30</span></div>
-        <div class="col-6 col-lg-12 setsize date toprow d-flex align-items-center justify-content-center"><span>LUNCH BREAK</span></div>
-        <div class="col-6 d-lg-none setsize date borderright d-flex align-items-center justify-content-center"><span>13:30-14:15</span></div>
-        <div class="col-6 col-lg-12 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-center"></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 d-lg-none setsize date borderright d-flex align-items-center justify-content-center"><span>14:15-15:00</span></div>
-        <div class="col-6 col-lg-12 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-center"></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"></div>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-3">
-        <div class="row">
-        <div class="col-6 d-lg-none setsize toprow borderright"></div>
-        <div class="col-6 col-lg-12 setsize date toprow d-flex align-items-center justify-content-center"><span>FRI 22.10</span></div>
-        <div class="col-6 d-lg-none setsize date bordertop borderright d-flex align-items-center justify-content-center"><span>10:00-10:45</span></div>
-        <div class="col-6 col-lg-12 setsize speaker bordertop d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-center"></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 d-lg-none setsize date borderright d-flex align-items-center justify-content-center"><span>10:45-11:30</span></div>
-        <div class="col-6 col-lg-12 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-center"></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 d-lg-none setsize date toprow borderright d-flex align-items-center justify-content-center"><span>11:30-11:45</span></div>
-        <div class="col-6 col-lg-12 setsize date toprow d-flex align-items-center justify-content-center"><span class="d-lg-none">COFFEE BREAK</span></div>
-        <div class="col-6 d-lg-none setsize date borderright d-flex align-items-center justify-content-center"><span>11:45-12:30</span></div>
-        <div class="col-6 col-lg-12 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-center"></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 d-lg-none setsize date toprow borderright d-flex align-items-center justify-content-center"><span>12:30-13:30</span></div>
-        <div class="col-6 col-lg-12 setsize date toprow d-flex align-items-center justify-content-center"><span class="d-lg-none">LUNCH BREAK</span></div>
-        <div class="col-6 d-lg-none setsize date borderright d-flex align-items-center justify-content-center"><span>13:30-14:15</span></div>
-        <div class="col-6 col-lg-12 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-center"></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-lg-12 d-none d-lg-block setsize"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>-->
-
-
-<!--------------------------------- TIMETABLE ----------------------------------->
-
- <nav class="navbar navbar-default titolo">
-   <div class="container-fluid justify-content-center">
-        <h1>TIMETABLE</h1>
-   </div>
-</nav>
-
-<div class="TTable container-fluid justify-content-center">
-  <div class="row container-fluid">
-    <div class="col-12 col-lg-4">
-      <div class="row">
-        <div class="col-lg-12 setsize date d-flex align-items-center justify-content-center"><span class="day">WED 20.10</span></div>
-        <div class="col-12 setsize-double speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-center"></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><span>Go back to bed!</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center"><span  class="time">10</span><span class="name">Giulia</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#giulia"><span>Massive amplitudes from the worldsheet</span></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-12 setsize date d-flex align-items-center justify-content-center"><span  class="time">10.45</span><span class="name">Coffee Break</span></div>
-        <div class="col-12 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center"><span  class="time">11.15</span><span class="name">Sujay</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#sujay"><span>Un-Higgsing the Higgs Branch</span></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center"><span  class="time">12</span><span class="name">Palash</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#palash"><span>Superconformal Indices BUT they're not just modular</span></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-12 setsize date d-flex align-items-center justify-content-center"><span  class="time">12.45</span><span class="name">Lunch Break</span></div>
-        <div class="col-12 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center"><span  class="time">13.45</span><span class="name">Pyry</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#pyry"><span>Attractive Calabi-Yau Manifolds</span></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center"><span  class="time">14.30</span><span class="name">Joseph</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#joseph"><span>Flux Modularity</span></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 setsize speaker d-flex align-items-center justify-content-center">
-        </div>
-        <div class="col-12 setsize speaker d-flex align-items-center justify-content-center">
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-lg-4">
-      <div class="row">
-        <div class="col-lg-12 setsize date d-flex align-items-center justify-content-center"><span class="day">THU 21.10</span></div>
-        <div class="col-12 setsize-double speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-center"></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><span>Go back to bed!</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center"><span  class="time">10</span><span class="name">Marieke</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#marieke"><span>Connecting the Higgs Branches of 5d SCFTs</span></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center"><span  class="time">10.45</span><span class="name">Horia</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#horia"><span>The U-plane of rank-one 4d N=2 KK theories</span></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-12 setsize date d-flex align-items-center justify-content-center"><span  class="time">11.30</span><span class="name">Coffee Break</span></div>
-        <div class="col-12 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center"><span  class="time">12</span><span class="name">Lea</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#lea"><span>SQFT dualities and their index identities</span></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-12 setsize date d-flex align-items-center justify-content-center"><span  class="time">12.45</span><span class="name">Lunch Break</span></div>
-        <div class="col-12 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center"><span  class="time">13.45</span><span class="name">Enrico</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#enrico"><span>More than a circle... A tale about T-duality</span></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center"><span  class="time">14.30</span><span class="name">Mateo</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#mateo"><span>SCFTs 4 ETCS & GCS: WTF?</span></a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-lg-4">
-      <div class="row">
-        <div class="col-lg-12 setsize date d-flex align-items-center justify-content-center"><span class="day">FRI 22.10</span></div>
-        <div class="col-12 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center"><span  class="time">9</span><span class="name">Maria</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#maria"><span>Random perturbations of the O(2) vector model</span></a></div>
-            </div>
-          </div>
-        </div>        
-        <div class="col-lg-12 setsize date d-flex align-items-center justify-content-center"><span  class="time">9.45</span><span class="name">Short Break</span></div>
-        <div class="col-12 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center"><span  class="time">10</span><span class="name">Andrea</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#andrea"><span>Hey, I just met you and this is singular...</span></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center"><span  class="time">10.45</span><span class="name">Pietro</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#pietro"><span>...But here's my (Euler) number, so call me spindle</span></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-12 setsize date d-flex align-items-center justify-content-center"><span  class="time">11.30</span><span class="name">Coffee Break</span></div>
-        <div class="col-12 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center"><span  class="time">12</span><span class="name">Dewi</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#dewi"><span>Holography, 1-Form Symmetries, and Confinement</span></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center"><span  class="time">12.45</span><span class="name">Giuseppe</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#giuseppe"><span>Non-supersymmetric brane profiles and dilaton tadpoles</span></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-12 setsize-double date d-flex align-items-center justify-content-center"><span  class="time">13.30</span><span class="name">Lunch Break</span></div>
-        <div class="col-12 setsize-double speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center"><span  class="time">15.15</span><span class="name">Discussion Session</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><span></span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="backtotop">
+	<a class="btn" href="#topofthepage">&#8679;</a>
 </div>
 
 
 
-<!--
-  <div class="TTable container-fluid justify-content-center">
-    <div class="row container-fluid">
-      <div class="col-12 col-lg-6">
-        <div class="row">
-        <div class="col-6 setsize toprow borderright"></div>
-        <div class="col-6 setsize date toprow d-flex align-items-center justify-content-center"><span>WED 20.10</span></div>
-        <div class="col-6 setsize date borderright bordertop d-flex align-items-center justify-content-center"><span>10:00-10:45</span></div>
-        <div class="col-6 setsize speaker bordertop d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-center"><span>Sujay</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#sujay"><span>The Trinion with a Twist</span></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 setsize date borderright d-flex align-items-center justify-content-center"><span>10:45-11:30</span></div>
-        <div class="col-6 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-center"><span>Diego</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#diego"><span>Spectral Sequences and Chiral Rings</span></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 setsize date toprow borderright d-flex align-items-center justify-content-center"><span>11:30-11:45</span></div>
-        <div class="col-6 setsize date toprow d-flex align-items-center justify-content-center"><span class="d-lg-none">COFFEE BREAK</span></div>
-        <div class="col-6 setsize date borderright d-flex align-items-center justify-content-center"><span>11:45-12:30</span></div>
-        <div class="col-6 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-center"><span>Giulia</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#giulia"><span>Worldsheet Formulae for Scattering Amplitudes in 6 and 4d</span></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 setsize date toprow borderright d-flex align-items-center justify-content-center"><span>12:30-13:30</span></div>
-        <div class="col-6 setsize date toprow d-flex align-items-center justify-content-center"><span class="d-lg-none">LUNCH BREAK</span></div>
-        <div class="col-6 setsize date borderright d-flex align-items-center justify-content-center"><span>13:30-14:15</span></div>
-        <div class="col-6 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-center"><span>Joseph</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#joseph"><span>Entropy of Arithmetic Black Holes (pt. I)</span></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 setsize date borderright d-flex align-items-center justify-content-center"><span>14:15-15:00</span></div>
-        <div class="col-6 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-center"><span>Pyry</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#pyry"><span>Entropy of Arithmetic Black Holes (pt. II)</span></a></div>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-3">
-        <div class="row">
-        <div class="col-6 d-lg-none setsize toprow borderright"></div>
-        <div class="col-6 col-lg-12 setsize date toprow d-flex align-items-center justify-content-center"><span>THU 21.10</span></div>
-        <div class="col-6 d-lg-none setsize date bordertop borderright d-flex align-items-center justify-content-center"><span>10:00-10:45</span></div>
-        <div class="col-6 col-lg-12 setsize speaker bordertop d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-center"><span>Julius</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#julius"><span>Trifectas for T<sub>N</sub> in 5d</span></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 d-lg-none setsize date borderright d-flex align-items-center justify-content-center"><span>10:45-11:30</span></div>
-        <div class="col-6 col-lg-12 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-center"><span>Horia</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#horia"><span>5d Seiberg-Witten Geometry of Rank One Theories</span></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 d-lg-none setsize date toprow borderright d-flex align-items-center justify-content-center"><span>11:30-11:45</span></div>
-        <div class="col-6 col-lg-12 setsize date toprow d-flex align-items-center justify-content-center"><span>COFFEE BREAK</span></div>
-        <div class="col-6 d-lg-none setsize date borderright d-flex align-items-center justify-content-center"><span>11:45-12:30</span></div>
-        <div class="col-6 col-lg-12 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-center"><span>Marieke</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#marieke"><span>(Symplectic) Leaves and (5d Higgs) Branches in the Tropical Rain Forest</span></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 d-lg-none setsize date toprow borderright d-flex align-items-center justify-content-center"><span>12:30-13:30</span></div>
-        <div class="col-6 col-lg-12 setsize date toprow d-flex align-items-center justify-content-center"><span>LUNCH BREAK</span></div>
-        <div class="col-6 d-lg-none setsize date borderright d-flex align-items-center justify-content-center"><span>13:30-14:15</span></div>
-        <div class="col-6 col-lg-12 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-center"><span>Andrea</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#andrea"><span>Supersymmetric Observables of N=1 Quantum Field Theories on a Twisted S<sup>1</sup> x S<sup>3</sup></span></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 d-lg-none setsize date borderright d-flex align-items-center justify-content-center"><span>14:15-15:00</span></div>
-        <div class="col-6 col-lg-12 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-center"><span>Carmen</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#carmen"><span>Negativities, 3d Higher Spin Gravity and Modular Bootstrap</span></a></div>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-3">
-        <div class="row">
-        <div class="col-6 d-lg-none setsize toprow borderright"></div>
-        <div class="col-6 col-lg-12 setsize date toprow d-flex align-items-center justify-content-center"><span>FRI 22.10</span></div>
-        <div class="col-6 d-lg-none setsize date bordertop borderright d-flex align-items-center justify-content-center"><span>10:00-10:45</span></div>
-        <div class="col-6 col-lg-12 setsize speaker bordertop d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-center"><span>Mateo</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#mateo"><span>An Explicit Example of a Family of Heterotic G<sub>2</sub> Systems</span></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 d-lg-none setsize date borderright d-flex align-items-center justify-content-center"><span>10:45-11:30</span></div>
-        <div class="col-6 col-lg-12 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-center"><span>Dewi</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#dewi"><span>Horizon Molecules in Causal Set Theory</span></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 d-lg-none setsize date toprow borderright d-flex align-items-center justify-content-center"><span>11:30-11:45</span></div>
-        <div class="col-6 col-lg-12 setsize date toprow d-flex align-items-center justify-content-center"><span class="d-lg-none">COFFEE BREAK</span></div>
-        <div class="col-6 d-lg-none setsize date borderright d-flex align-items-center justify-content-center"><span>11:45-12:30</span></div>
-        <div class="col-6 col-lg-12 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-center"><span>Palash</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#palash"><span>Modular Bootstrap and Classification of Rational CFT</span></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 d-lg-none setsize date toprow borderright d-flex align-items-center justify-content-center"><span>12:30-13:30</span></div>
-        <div class="col-6 col-lg-12 setsize date toprow d-flex align-items-center justify-content-center"><span class="d-lg-none">LUNCH BREAK</span></div>
-        <div class="col-6 d-lg-none setsize date borderright d-flex align-items-center justify-content-center"><span>13:30-14:15</span></div>
-        <div class="col-6 col-lg-12 setsize speaker d-flex align-items-center justify-content-center">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front d-flex align-items-center justify-content-center"><span>Atul</span></div>
-              <div class="flip-card-back talk d-flex align-items-center justify-content-center"><a href="abstracts.html#atul"><span>Celestialology</span></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-lg-12 d-none d-lg-block setsize"></div>
-        </div>
-      </div>
-    </div>
-  </div>
--->
-
-
-
-<a id="backtotop" href="#topofthepage">&#8679;</a>
-
-
-
-
-  <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </body>
+
 </html>
