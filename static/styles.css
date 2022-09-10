@@ -184,11 +184,6 @@ div {
 
 /*----------- MAIN BODY IN ABSTRACTS -----------*/
 
-.boxabstracts {
-	width: 70%;
-	text-align: left;
-}
-
 h1 span {
 	font-size: 0.7em;
 }
@@ -389,6 +384,11 @@ img {
 	.titolo {
 		padding: 10px;
 	}
+	
+	.boxabstracts {
+		width: 85%;
+		text-align: left;
+	}
 }
 
 
@@ -504,4 +504,10 @@ img {
 	.titolo {
 		padding: 20px;
 	}
+	
+	.boxabstracts {
+		width: 70%;
+		text-align: left;
+	}
+	
 }
